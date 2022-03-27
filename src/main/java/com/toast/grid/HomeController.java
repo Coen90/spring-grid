@@ -38,4 +38,9 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value = "/build", method = RequestMethod.GET)
+	public String build(Locale locale, Model model) {
+		
+		return "builder";
+	}
 }
